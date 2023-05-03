@@ -8,14 +8,20 @@ int main() {
     int a=0;
     cin >> a;
 
-    int i=0;
-    while(i<10 && lista[i]<=a){
-        i++;
+    // Inserire soluzione
+
+    int x=9999999;
+    for(int i=0;i<10;i++){
+        if(a<lista[i])
+            x=i;
+        break;
     }
-    for(int j=9;j>i;j--) {
-        lista[j] = lista[j - 1];
+    if(x!=9999999){
+        for(int j=9;j>x;j--){
+            lista[j] = lista[j-1];
+        }
+        lista [x] =a;
     }
-    lista[i] = a;
 
     for(int i=0;i<10;i++){
         cout << lista[i] << " ";
