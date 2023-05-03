@@ -12,7 +12,7 @@ int main() {
     while(i<10 && lista[i]<a){
         i++;
     }
-    for(int j=9;j>i;j--) {
+    for(int j=9;j>=i;j--) {
         lista[j] = lista[j - 1];
     }
     lista[i] = a;
