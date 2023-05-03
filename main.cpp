@@ -8,7 +8,6 @@ int main() {
     int a=0;
     cin >> a;
 
-    // Inserire soluzione
 
     int x=9999999;
     for(int i=0;i<10;i++){
