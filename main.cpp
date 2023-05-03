@@ -20,6 +20,7 @@ int main() {
             lista[j] = lista[j-1];
         }
         lista [x] =a;
+        break;
     }
 
     for(int i=0;i<10;i++){
